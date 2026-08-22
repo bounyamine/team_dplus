@@ -1,0 +1,458 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	outline: none;
+	list-style: none;
+	scroll-behavior: smooth;
+}
+
+body{
+	background: url("../img/bgp.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	margin-top: 70px;
+	font-family: Po18;
+}
+
+header{
+	height: 70px;
+	display: flex;
+	padding: 0 20px;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: calc(100% - 40px);
+	box-shadow: 0 2px 3px #0002;
+	z-index: 1;
+}
+
+.logo{
+	color: royalblue;
+	font-family: Po52;
+}
+
+.logo a{
+	color: royalblue;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+nav ul, nav ul li, nav li a{
+	display: flex;
+	align-items: center;
+}
+
+nav ul li:first-child a{
+	background: royalblue;
+	color: #fff;
+	border: solid 1px royalblue;
+	display: inline-block;
+	padding: 6px 12px;
+	text-align: center;
+	border-radius: 20px;
+	font-weight: bold;
+}
+
+nav ul li:last-child a{
+	border: solid 1px royalblue;
+	color: #34fd;
+	background: #00f1;
+	margin-left: 6px;
+	padding: 3px 10px;
+	border-radius: 20px;
+}
+
+section.index{
+	background: url("../img/afric-school.jpg"), linear-gradient(to bottom right, blue, purple);
+	background-size: cover;
+	height: 360px;
+}
+
+section.index div{
+	height: 200px;
+	background: #0008;
+	padding: 80px 30px;
+	color: #fffd;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.fleches{
+	animation: anim1 2s linear infinite;
+}
+
+@keyframes anim1{
+	0%, 100%{
+		position: relative;
+		left: 0;
+		z-index: 0;
+	}
+	50%{
+		position: relative;
+		left: 10px;
+		z-index: 0;
+	}
+}
+
+h1, H2, h3, h4, h5, h6{
+	font-family: Po39;
+}
+
+.index p{
+	margin: 20px 0;
+}
+
+.index a{
+	display: inline-flex;
+	align-items: center;
+	background:#CB0331;
+	color: #fff;
+	padding: 5px 20px;
+	border-radius: 20px;
+	justify-content: center;
+	text-align: center;
+	font-weight: bold;
+}
+
+#about{
+	padding: 100px 20px 100px;
+}
+#about h2 {
+	margin-bottom: 20px;
+}
+
+#price{
+	padding: 70px 20px;
+	background: #FFBF80bb;
+	border-top: solid 2px #FFBF80;
+	border-bottom: solid 2px #FFBF80;
+}
+
+#price h2{
+	color: crimson;
+	margin-bottom: 20px;
+}
+
+.price-item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.price-item figure{
+	text-align: center;
+	margin: 15px 10px;
+	color: ad90052;
+}
+
+.price-item .ico-price{
+	background: #d9005244;
+	display: inline-block;
+	padding: 10px;
+	border-radius: 8px;
+	color: #d90052;
+}
+
+.price-item figcaption {
+	font-size: 13px;
+	line-height: 13px;
+	margin-top: 10px;
+}
+
+.price-item figcaption::first-letter {
+	text-transform: uppercase;
+}
+
+#formation{
+	background: #ddd5;
+	padding: 70px 20px;
+	border-top: solid 1px #ddd;
+	border-bottom: solid 1px #ddd;
+	border-radius: 10px;
+}
+
+#formation h2 + p {
+	padding: 20px 0;
+}
+
+#formation figure{
+	display: flex;
+	align-items: start;
+	background: #fffd;
+	padding: 20px;
+	margin: 10px 0;
+	border-radius: 20px;
+}
+
+figure img {
+	width: 70px;
+	border-radius: 10px;
+}
+
+#formation figcaption{
+	margin-left: 20px;
+}
+
+#formation figure p{
+	padding-top: 10px;
+	font-size: 14px;
+}
+
+footer{
+	background: url("../img/bg2.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	color: #444;
+	padding: 10px 20px 0;
+}
+
+footer h2 {
+	padding: 40px 0 5px;
+	border-bottom: dotted 1px #444;
+	margin-bottom: 15px;
+}
+
+#foo_about ul {
+	margin: 0;
+	opacity: 1;
+}
+
+footer ul{
+	opacity :.8;
+	margin-left: 30px;
+}
+
+footer a{
+	display: flex;
+	align-items: center;
+	color: #4600FF;
+	opacity: .5;
+}
+
+#rs a{
+	opacity: 1;
+	display: inline-block;
+}
+
+#rs img{
+	width: 40px;
+	object-fit: cover;
+	margin: 10px 3px 25px;
+	border-radius: 50%;
+}
+
+footer .logo{
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+#copyright{
+	padding: 10px;
+	text-align: center;
+	background: #000;
+	color: #ddd;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+/*#popup{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	backdrop-filter: blur(8px);
+	background: #0003;
+	z-index: 2;
+	overflow: hidden;
+}
+
+.pop{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 30px 30px 20px;
+	background: url("../img/bg2.jpg");
+	background-size: cover;
+	width: calc(100% - 60px);
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+}
+
+.pop h2 {
+	color: crimson;
+}
+
+.pop p{
+	padding: 20px 0 10px;
+	display: flex;
+}
+
+.pop p span.btn{
+	background: crimson;
+	color: #fff;
+	display: inline-block;
+	padding: 10px 30px;
+	border-radius: 10px;
+	margin-top: 20px;
+	float: right;
+}
+
+.pop .material-icons {
+	display: inline-block;
+	font-size: 60px;
+	color: #FF9A00;
+	margin-right: 10px;
+}
+
+	<div id="popup">
+		<div class="pop">
+			<h2>Avertissement</h2>
+			<p><span class="material-icons">error_outline</span>
+				<span>Notre site n'utilise pas de cookies, ainsi toutes les données s'il arrive que nous les collectons, ne seront pas enregistrées ! <br />
+				<span class="btn" onclick="document.querySelector('#popup').style.display = 'none';">D'accord</span></span>
+				</p>
+		</div>
+	</div>*/
+
+form{
+	padding: 70px 20px;
+}
+
+form h2 {
+	padding: 30px 0 10px;
+}
+
+form h2 + p{
+	margin: 5px 0 10px;
+}
+label{
+	font-weight: bold;
+	color: royalblue;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+input{
+	font-size: 16px;
+	padding: 8px 15px;
+	border: solid 2px #0003;
+	width: calc(100% - 30px);
+	border-radius: 5px;
+	background:#fff8;
+	caret-color: royalblue;
+	font-family: Po18;
+	color: #000b;
+}
+
+input:focus{
+	border: solid 2px #34fa;
+}
+
+input::placeholder {
+	font-family: Po18;
+	color: #0006;
+}
+
+input[type=radio]{
+	width: auto;
+	padding: 0;
+}
+
+.sexe{
+	display: flex;
+	justify-content: space-around;
+}
+
+.sexe label{
+	margin-top: 10px;
+	padding: 0 10px 40px;
+	color: #000b;
+}
+
+input[type=submit]{
+	width: auto;
+	background: royalblue;
+	color: #fff;
+	border:none;
+	font-weight: bold;
+	padding: 10px 25px;
+}
+
+.price-item figure{
+		width: 90px;
+	}
+
+@media screen and (min-width:720px){
+	section.index p{
+		max-width: 400px;
+	}
+	section h1, section H2, section h3,section h4, section h5 {
+		text-align: center;
+	}
+	form{
+		width: 600px;
+		border: solid 2px #0002;
+		margin: 140px auto;
+		padding: 70px 20px;
+		border-radius: 10px;
+	}
+	#lang-web, #flex{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	#lang-web figure{
+		width: 500px;
+		text-align: left;
+		margin: 10px;
+	}
+	#flex{
+		justify-content: space-around;
+	}
+	#flex div{
+		width: 300px;
+		margin: 10px 20px;
+	}
+	
+	.names{
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.names div{
+		width: 100%;
+	}
+	
+	.names div:first-child{
+		margin-right: 20px;
+	}
+	.names div:last-child{
+		margin-left: 20px;
+	}
+	.price-item figure{
+		width: 100px;
+	}
+}
+
+@media screen and (min-width:1080px){
+	section{
+		text-align: center;
+	}
+	
+	#app{
+		width: 900px;
+		margin: 0 auto;
+	}
+	
+	#lang-web figure{
+		width: 350px;
+	}
+}
